@@ -18,6 +18,8 @@
 - (instancetype)init
 {
   if (self = [super init]) {
+    _circle.fillColor = _fillColor;
+    _circle.strokeColor = _strokeColor;
     _didMoveToWindow = false;
     _circle = [[GMSCircle alloc] init];
   }
